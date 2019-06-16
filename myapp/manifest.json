@@ -18,11 +18,21 @@
       "scripts": ["background.js"]
   },
 
-  "permissions": ["tabs"],
+  "permissions": ["activeTab"],
+
+  "commands": {
+    "toggle-feature-foo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Toggle feature foo"
+    }
+  },
 
   "browser_action": {
     "default_icon": "icon_128.png",
     "default_popup": "popup.html",
-    "default_title": "Popup placeholder"
+    "default_title": "Typing Bar"
   }
 }
